@@ -21,6 +21,23 @@ namespace DiziUygulama
                 Console.WriteLine(a[i]);
             }
             
+            
+            Console.WriteLine("Sayı Giriniz: ");
+bool sonuc=false;
+int girilensayi=Convert.ToInt32(Console.ReadLine());
+for (int kk=0;kk<dizi.length;kk++)
+{
+	if (dizi[kk]==girilensayi)
+		sonuc=true;
+}
+if (sonuc==true)
+{
+	Console.WriteLine("Girdiğiniz Sayı Dizide Mevcut!");
+}
+else
+{
+	Console.WriteLine("Girdiğiniz Sayı Dizide Mevcut Değil!");
+}
             Console.ReadKey();
         }
     }
